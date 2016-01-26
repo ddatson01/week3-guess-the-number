@@ -1,4 +1,4 @@
-# replace the contents of this comment with your name
+# Devyn Datson
 import random
 
 # -------------------------------------------------------------------
@@ -7,7 +7,7 @@ import random
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
 def generateNumber( topLimit ):
-    
+    topNumber = random.randint(1, topLimit)
     # TO DO: ####################################################
     # Write code in this function that calculates and           #
     # returns a random number between 1 and the user's topLimit #
@@ -66,6 +66,14 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       True, we'll show the right answer on the screen
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):
+    print('Hello user!')
+    print('Please choose an upper limit of the random number generator.')
+    topLimit= int(input())
+    print('Please choose a total number of guesses')
+    totalGuesses=int(input())
+    print('Please guess a number between 1 and '+ topNumber)
+    theNumber= int(input())
+    if theNumber < topNumber print('Choose a number lower than the upper limit') else print('Thank you')
     
     # TO DO: ####################################################
     # Write code in this function that                          #
